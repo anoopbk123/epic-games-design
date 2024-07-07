@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  color-scheme: dark;
+}
+
+/* ||CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Roboto;
+  padding: 5vh 0;
+  font-weight: 300;
+  font-size: clamp(0.5em, 5vw, 1em);
+}
+
+/* ||Reusable Classes */
+.ff-poppins {
+  font-family: Poppins;
+}
+.text-center {
+  text-align: center;
+}
+.p-1 {
+  padding: 1em;
+}
+.mt-1 {
+  margin-top: 1em;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.g-1 {
+  gap: 2em;
+}
+.m-1{
+  margin: 1em;
+}
+.btn {
+  border: 0;
+  width: 32vw;
+  max-width: 216px;
+  padding: 0.55em;
+  font-size: 0.75em;
+}
+.btn-primary:hover {
+  background-color: #000000;
+  border:1px solid ;
+  color: #ffffff;
+}
+.btn-primary {
+  background-color: #ffffff;
+  color: black;
+}
+.btn-secondary{
+  background-color: black;
+  color: #ffffff;
+  border:1px solid 
+}
+.btn-secondary:hover{
+  background-color: #ffffff;
+  color: black;
+}
+.image-fluid {
+  width: 100%;
+}
+.card {
+  max-width: 347px;
+}
+.card img {
+  height: 347px;
+  object-fit: cover;
+}
+.num {
+  font-size: clamp(2em, 12vw, 80px);
+  font-weight: 200;
+}
+.title {
+  font-size: clamp(1.35em, 7vw, 45px);
+  font-weight: 200;
+  line-height: clamp(1em, 8vw, 48px);
+  letter-spacing: 0.9599999785423279px;
+  text-transform: capitalize;
+  padding: 1em 1em 0 1em;
+}
+.card-container {
+  margin: 3em 0;
+}
+.hero-image-container {
+  margin: 5vh 0;
+}
+.hero-image {
+  max-height: 500px;
+  object-fit: cover;
+  object-position: 0% 0%;
+}
+.contact .title{
+  font-weight: 300;
+}
+.contact p{
+  width:70%;
+  margin: auto;
+}
+.contact a{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.footer{
+  font-size: clamp(0.3em, 3vw, 0.7em);
+  margin-top: 7vh;
+}
+
+/*  */
+
+@media screen and (max-width: 400px) {
+  .card img {
+    height: auto;
+  }
+  body{
+    font-size: clamp(0.25em, 2.5vw, 0.5em);
+  }
+  .title{
+    font-size: clamp(1em, 4vw, 23px);
+    line-height: clamp(0.5em, 4vw, 24px);
+  }
+  .btn{
+    width: 40vw;
+    font-size: 1.5em;
+  }
+}
